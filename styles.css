@@ -1,0 +1,88 @@
+:root{
+  --bg:#ffffff; --panel:#f8f9fc; --card:#ffffff;
+  --accent:#5090e3; --text:#1c1e21; --muted:#606770;
+  --line:#e6e8ef; --shadow:0 4px 12px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+
+/* NAV */
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+  background:var(--bg); padding:12px 16px; position:sticky; top:0; z-index:10;
+  box-shadow:0 1px 0 var(--line);
+}
+.nav-left .brand{font-weight:700}
+
+/* Menu */
+.menu{ position:relative; z-index:50; } /* importante */
+.hamburger{
+  width:42px; height:36px; display:grid; place-items:center;
+  border:none; background:#eef4ff; border-radius:10px; cursor:pointer;
+  border:1px solid #d3e3ff; padding:0;
+}
+.hamburger span{display:block; width:20px; height:2px; background:#1c3b6b; margin:3px 0; transition:.2s}
+.menu.open .hamburger span:nth-child(1){ transform: translateY(5px) rotate(45deg) }
+.menu.open .hamburger span:nth-child(2){ opacity:0 }
+.menu.open .hamburger span:nth-child(3){ transform: translateY(-5px) rotate(-45deg) }
+.menu-panel{
+  position:absolute; right:0; top:46px; min-width:180px;
+  background:#fff; border:1px solid var(--line); border-radius:12px;
+  box-shadow:var(--shadow); padding:8px; display:none; z-index:60; /* importante */
+}
+.menu-panel a{ display:block; padding:10px 12px; border-radius:8px; color:var(--text) }
+.menu-panel a:hover{ background:#f2f6ff }
+.menu.open .menu-panel{ display:block }
+.menu-panel a.active{ background:#e7f0ff; font-weight:600 }
+.hamburger:focus-visible{ outline:2px solid var(--accent); outline-offset:2px }
+
+/* Header/cards */
+.header{display:flex;align-items:center;gap:16px;margin:24px 0}
+.header .pic{width:120px;height:120px;border-radius:50%;object-fit:cover;background:var(--accent);display:grid;place-items:center;box-shadow:var(--shadow)}
+.badge{display:inline-block;background:#eef4ff;color:#184070;padding:6px 10px;border-radius:999px;border:1px solid #d3e3ff}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border-radius:16px;padding:18px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.card-img{width:100%;border-radius:12px;margin-top:10px;object-fit:cover}
+.card-video{width:100%;border-radius:12px;margin-top:10px;max-height:250px;object-fit:cover}
+
+/* Schedule */
+.schedule{background:var(--panel);border-radius:16px;padding:16px;overflow:auto;border:1px solid var(--line)}
+.schedule table{width:100%;border-collapse:collapse;min-width:540px}
+.schedule th,.schedule td{border:1px solid var(--line);padding:10px;text-align:center}
+.schedule th{background:#f2f5fb;color:#0f1b2d}
+
+/* --- Chips de CV --- */
+.cv-chips { padding: 12px 14px; }
+.cv-chips-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.chips{
+  display: flex;
+  flex-wrap: wrap;           /* permite varias líneas */
+  gap: 8px;                  /* espacio entre chips */
+}
+.chip{
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eef4ff;
+  border: 1px solid #d3e3ff;
+  color: #1c3b6b;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+}
+.chip:hover{ background:#e3eeff }
+.chip.active{ background:#d7e7ff }
+
+/* Espaciado y “offset” para el scroll con nav sticky */
+html{ scroll-behavior: smooth; }
+.cv-section{ padding: 12px 0; }
+.cv-section + hr{ margin: 20px 0; }
+.cv-section{ scroll-margin-top: 90px; }  /* evita que el título quede tapado */

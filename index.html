@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Mi Sitio</title><link rel="stylesheet" href="styles.css"><script defer src="script.js"></script></head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left"><span class="brand">MiSitio</span></div>
+  <div class="nav-right menu">
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="menu-panel">
+      <a href="index.html">HP</a>
+      <a href="personal-info.html">PI</a>
+      <a href="schedule.html">PS</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <header class="header">
+    <img src="IMG_3637.jpg" alt="Mi foto" class="pic">
+    <div><h1>Machorro Villa Marco Antonio</h1><p class="badge">Home page</p></div>
+  </header>
+  <section class="panel">
+    <h2>Bienvenido</h2>
+    <p>Este sitio contiene mi información personal, horario y CV.</p>
+    <div class="btns">
+      <a class="badge" href="personal-info.html">Ir a PI</a>
+      <a class="badge" href="schedule.html">Ir a PS</a>
+      <a class="badge" href="cv.html">Ir a CV</a>
+    </div>
+  </section>
+  <!-- Atajos / Quick links -->
+<section class="grid quick cards" style="margin-top:16px">
+  <a class="card quick-item" href="personal-info.html">
+    <div class="quick-emoji">👤</div>
+    <div>
+      <h3>Personal Info</h3>
+      <p>Quién soy, gustos y hobbies</p>
+    </div>
+  </a>
+  <a class="card quick-item" href="schedule.html">
+    <div class="quick-emoji">🗓️</div>
+    <div>
+      <h3>Schedule</h3>
+      <p>Mi horario de la semana</p>
+    </div>
+  </a>
+  <a class="card quick-item" href="cv.html">
+    <div class="quick-emoji">🧾</div>
+    <div>
+      <h3>CV</h3>
+      <p>Resumen, educación, proyectos</p>
+    </div>
+  </a>
+</section>
+
+<!-- Now Playing / Reproductor -->
+<section class="panel now-playing" style="margin-top:16px">
+  <div class="np-left">
+    <img class="np-cover" src="images.jpg" alt="Portada">
+    <div>
+      <h3>Now playing</h3>
+      <p class="np-title">Canción favorita</p>
+      <p class="np-artist">Natanael Cano | Perlas Negras </p>
+    </div>
+  </div>
+  <audio class="np-audio" controls>
+    <!-- pon aquí tu archivo (ej: song.mp3) en la misma carpeta -->
+    <source src="Natanael Cano x Gabito Ballesteros - Perlas Negras [Official Visualizer].mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+</section>
+
+<!-- Highlights -->
+<section class="grid cards highlights" style="margin-top:16px">
+  <article class="card">
+    <h3>Recent Proyect</h3>
+    <p>Modelado en computacion grafica de una casa.</p>
+  </article>
+  <article class="card">
+    <h3>Current interest</h3>
+    <p> Criptografía aplicada (cursos y labs), así como ciberseguridad.</p>
+  </article>
+  <article class="card">
+    <h3>Goals</h3>
+    <p>Mejorar fuerza de backend (API REST) y CI/CD con pruebas.</p>
+  </article>
+</section>
+</div>
+</body></html>

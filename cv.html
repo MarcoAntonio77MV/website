@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV | Mi Sitio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-left">
+      <span class="brand">MiSitio</span>
+    </div>
+    <div class="nav-right menu">
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu-panel">
+        <a href="index.html">HP</a>
+        <a href="personal-info.html">PI</a>
+        <a href="schedule.html">PS</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="header">
+      <img src="IMG_3637.jpg" alt="Mi foto" class="pic">
+      <div>
+        <h1>Curriculum (CV)</h1>
+        <p class="badge">Haz clic en los chips o usa el menú para navegar</p>
+      </div>
+    </header>
+
+    <!-- Chips (en el mismo orden de secciones) -->
+    <section class="panel cv-chips">
+      <div class="cv-chips-title">Secciones</div>
+      <nav class="chips">
+        <a class="chip" href="#summary">Summary</a>
+        <a class="chip" href="#personal-data">Personal Data</a>
+        <a class="chip" href="#education">Education</a>
+        <a class="chip" href="#trainings">Trainings / Certification</a>
+        <a class="chip" href="#experience">Professional Experience</a>
+        <a class="chip" href="#projects">Projects</a>
+        <a class="chip" href="#languages">Languages</a>
+        <a class="chip" href="#prog">Programming languages</a>
+        <a class="chip" href="#others">Others</a>
+      </nav>
+    </section>
+
+    <main class="panel">
+      <!-- 1) Summary -->
+      <section id="summary" class="cv-section">
+        <h2>Summary</h2>
+        <p>
+          Estudiante del 9° semestre de Ingeniería en Computación en la UNAM, con más de 4 años de experiencia académica desarrollando soluciones tecnológicas y sistemas complejos.
+          Apasionado por la innovación, el diseño de software y la programación en distintas plataformas. Me distinguen la capacidad para resolver problemas, colaborar y documentar de forma clara.
+        </p>
+      </section><hr>
+
+      <!-- 2) Personal Data -->
+      <section id="personal-data" class="cv-section">
+        <h2>Personal Data</h2>
+        <ul>
+          <li><strong>Nombre:</strong> Machorro Villa Marco Antonio</li>
+          <li><strong>Email:</strong> marcomachorro29@gmail.com</li>
+          <li><strong>Teléfono:</strong> +52 5574398001</li>
+          <li><strong>Ciudad:</strong> Coyoacán, CDMX</li>
+        </ul>
+      </section><hr>
+
+      <!-- 3) Education -->
+      <section id="education" class="cv-section">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Ingeniería en Computación</strong> — Universidad Nacional Autónoma de México (UNAM) | 2021 – Actualidad</li>
+        </ul>
+      </section><hr>
+
+      <!-- 4) Trainings / Certification -->
+      <section id="trainings" class="cv-section">
+        <h2>Trainings / Certification</h2>
+        <ul>
+          <li>MATLAB Onramp</li>
+          <li>Introduction to Symbolic Math with MATLAB</li>
+        </ul>
+      </section><hr>
+
+      <!-- 5) Professional Experience -->
+      <section id="experience" class="cv-section">
+        <h2>Professional Experience</h2>
+        <p><em>Experiencia académica y de proyectos en la Facultad de Ingeniería (UNAM).</em></p>
+        <ul>
+          <li>Desarrollo de software y diseño de sistemas: participación en equipos para diseñar, implementar y probar aplicaciones web, móviles y de escritorio.</li>
+          <li>Tecnologías utilizadas: C/C++, Python, Java (básico), SQL; VHDL y control PWM sobre FPGA; OpenGL para gráficos 3D.</li>
+        </ul>
+      </section><hr>
+
+      <!-- 6) Projects -->
+      <section id="projects" class="cv-section">
+        <h2>Projects</h2>
+        <ul>
+          <li>Asistencia a personas con discapacidad visual: integración de sensores de proximidad con alertas vibratorias y sonoras.</li>
+          <li>Simulación de búsqueda de rutas óptimas (A*) en mapas.</li>
+          <li>Implementación de circuitos digitales en VHDL y control de dispositivos mediante PWM en FPGA.</li>
+          <li>Modelado 3D con OpenGL (estilo videojuegos), importando y manipulando modelos <code>.obj</code>.</li>
+          <li><strong>Diseño y desarrollo de páginas web responsivas</strong> con HTML, CSS y JavaScript, enfocadas en usabilidad, organización de contenidos y navegación clara.</li>
+        </ul>
+      </section><hr>
+
+      <!-- 7) Languages -->
+      <section id="languages" class="cv-section">
+        <h2>Languages</h2>
+        <ul>
+          <li>Español — Nativo</li>
+          <li>Inglés — Básico–Intermedio</li>
+        </ul>
+      </section><hr>
+
+      <!-- 8) Programming languages -->
+      <section id="prog" class="cv-section">
+        <h2>Programming languages</h2>
+        <p>C · C++ · Python · Java (básico) · SQL · HTML/CSS </p>
+      </section><hr>
+
+      <!-- 9) Others -->
+      <section id="others" class="cv-section">
+        <h2>Others</h2>
+        <p>
+          <strong>Herramientas:</strong> Word, Excel (Intermedio), Quartus, Android Studio, Visual Studio, Blender.<br>
+          <strong>Habilidades:</strong> Resolución de problemas complejos, trabajo en equipo, adaptabilidad, diseño de sistemas y simulaciones, UX/UI básico, bases de datos, organización y creatividad.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
